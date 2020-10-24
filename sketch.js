@@ -37,10 +37,9 @@ function setup() {
 
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
- 	World.add(world, ground);
-
-
-	Engine.run(engine);
+	 World.add(world, ground)
+    Matter.Body.setStatic(rectangle,true);
+	Engine.run(engine)
   
 }
 
@@ -51,7 +50,7 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
   drawSprites();
- 
+  
 }
 
 function keyPressed() {
