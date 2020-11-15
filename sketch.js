@@ -39,7 +39,6 @@ function setup() {
 	//Create a Ground
 	fill("red")
 	
-
 	log1 = new Log(width/2, height-45, 250, 20);
 	log2 = new Log(width/3,height-110,20,150);
 	log3 = new Log(width/1.5, height-110, 20, 150);
